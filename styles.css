@@ -1,0 +1,146 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin-top: 50px;
+}
+
+div.container_timeline_full {
+	position: relative;
+	margin: 0 5%;
+}
+
+div.container_timeline_full div.timeline {
+	width: 100%;
+	position: relative;
+	overflow-x: hidden;
+}
+
+div.container_timeline_full div.timeline div.rect_gradient {
+	height: 60px;
+	background: linear-gradient(to right, rgba(0, 87, 125, 1) 0%, 23.695844411849976%, rgba(52, 135, 123, 1) 47.39168882369995%, 73.69584441184998%, rgba(103, 205, 183, 1) 100%);
+	border-radius: 30px 0;
+	padding: 0 20px;
+}
+
+div.container_timeline_full div.timeline div.container_cards_timeline {
+	display: flex;
+}
+
+div.container_timeline_full div.timeline div.container_cards_timeline div.timeline_card:first-child {
+	padding-left: 40px;
+	margin-left: 0;
+}
+
+div.container_timeline_full div.timeline div.container_cards_timeline div.timeline_card {
+	position: relative;
+	top: -42px;
+	min-width: 380px;
+	margin-left: 40px;
+	padding-left: 20px;
+}
+
+div.container_timeline_full div.timeline div.container_cards_timeline div.timeline_card div.ano {
+	color: #fff;
+	font-weight: bold;
+}
+
+div.container_timeline_full div.timeline div.container_cards_timeline div.timeline_card div.ano div.circle {
+	background: #67cdb7;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin-left: -5px;
+}
+
+div.container_timeline_full div.timeline div.container_cards_timeline div.timeline_card div.desc_timeline {
+	padding: 40px 0px 0px 20px;
+	border-left: #67cdb7 4px solid;
+	font-size: 15px;
+}
+
+div.container_timeline_full div.timeline div.container_cards_timeline div.timeline_card div.desc_timeline figure {
+	margin-left: 0px !important;
+}
+
+div.container_timeline_full button.button-prev,
+div.container_timeline_full button.button-next {
+	position: absolute;
+	background: none;
+	border: none;
+}
+
+div.container_timeline_full button.button-prev:hover,
+div.container_timeline_full button.button-next:hover {
+	background: none !important;
+}
+
+div.container_timeline_full button.button-prev {
+	top: 30%;
+	left: -50px;
+}
+
+div.container_timeline_full button.button-next {
+	top: 30%;
+	right: -50px;
+}
+
+div.container_timeline_full button.button-prev i,
+div.container_timeline_full button.button-next i {
+	color: #67cdb7;
+	font-size: 30px;
+}
+
+div.container_timeline_full div.dot_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.container_timeline_full div.dot_container button {
+	border: 2px solid #67cdb7;
+	background: none;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	margin-left: 10px;
+	padding: 0 !important;
+}
+
+div.container_timeline_full div.dot_container button:hover {
+	background: none !important;
+}
+
+div.container_timeline_full div.dot_container button.active_dot {
+	background: #67cdb7 !important;
+}
+
+@media(max-width: 768px) {
+	div.container_timeline_full {
+		margin: 0px;
+	}
+
+	div.container_timeline_full div.timeline div.container_cards_timeline div.timeline_card:first-child {
+		margin-left: 0;
+		padding-left: 20px;
+	}
+
+	div.container_timeline_full button.button-prev {
+		top: 50%;
+		left: 5px !important;
+	}
+
+	div.container_timeline_full button.button-next {
+		top: 50%;
+		right: 5px !important;
+	}
+
+	@media(max-width: 380px) {
+		div.container_timeline_full div.timeline div.container_cards_timeline div.timeline_card {
+			min-width: 320px;
+		}
+	}
+}
